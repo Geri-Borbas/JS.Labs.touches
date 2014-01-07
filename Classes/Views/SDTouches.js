@@ -12,30 +12,14 @@
 var SDTouches = Class.extend
 ({
     /**
-     * @param model The underlying model.
+     * @param inspectableEventTypes Event types to be inspected.
      */
-    construct: function()
+    construct: function(inspectableEventTypes)
     {
         // Outlets.
         this.body = document.body;
         this.inspector = null;
-        this.inspectableEventTypes =
-            [
-                'mouseover',
-                'mouseout',
-
-                'onclick',
-                'mousedown',
-                // 'mousemoved',
-                'mouseup',
-
-                'touchstart',
-                'touchmove',
-                'touchend',
-
-                'touchcancel',
-                'touchleave',
-            ];
+        this.inspectableEventTypes = inspectableEventTypes;
 
         // UI.
         this.build();

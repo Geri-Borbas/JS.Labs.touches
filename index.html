@@ -27,13 +27,30 @@
             document.body.preventScroll();
 
             // Manager.
-            var touches = new SDTouches();
+            var touches = new SDTouches(
+                    [
+                        // Inspectable event types.
+
+                        'mouseover',
+                        'mouseout',
+
+                        'onclick',
+                        'mousedown',
+                        // 'mousemoved',
+                        'mouseup',
+
+                        'touchstart',
+                        // 'touchmove',
+                        'touchend',
+
+                        'touchcancel',
+                        'touchleave',
+                    ]);
 
             // Views.
             var scene = document.getElementById('scene');
             var view = new SDView('view');
             scene.appendChild(view.div);
-
 
         </script>
 

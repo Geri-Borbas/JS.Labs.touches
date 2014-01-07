@@ -23,6 +23,8 @@ body
     position: relative;
 
     font-family: 'Roboto', sans-serif;
+
+    -webkit-user-select: none;
 }
 
 #scene

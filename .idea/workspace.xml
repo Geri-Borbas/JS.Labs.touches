@@ -8,7 +8,7 @@
     <file path="/index.scss" changelist="1a0fc23f-723e-49fe-9728-47527ba11576" time="1389082055991" ignored="false" />
     <file path="/index.html" changelist="1a0fc23f-723e-49fe-9728-47527ba11576" time="1389081259544" ignored="false" />
     <file path="/SDView.js" changelist="1a0fc23f-723e-49fe-9728-47527ba11576" time="1389081311806" ignored="false" />
-    <file path="/SDTouches.js" changelist="1a0fc23f-723e-49fe-9728-47527ba11576" time="1389081781730" ignored="false" />
+    <file path="/SDTouches.js" changelist="1a0fc23f-723e-49fe-9728-47527ba11576" time="1389082630091" ignored="false" />
     <file path="/SDEventInspectorView.js" changelist="1a0fc23f-723e-49fe-9728-47527ba11576" time="1389081113277" ignored="false" />
     <file path="/SDEventInspectorView.scss" changelist="1a0fc23f-723e-49fe-9728-47527ba11576" time="1389081000502" ignored="false" />
     <file path="/mixins.scss" changelist="1a0fc23f-723e-49fe-9728-47527ba11576" time="1389080989154" ignored="false" />
@@ -42,17 +42,17 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/UI/scss/index.scss" />
         <option value="$PROJECT_DIR$/UI/scss/mixins.scss" />
         <option value="$PROJECT_DIR$/UI/scss/SDEventInspectorView.scss" />
         <option value="$PROJECT_DIR$/Classes/Views/SDView.js" />
-        <option value="$PROJECT_DIR$/Classes/Views/SDTouches.js" />
         <option value="$PROJECT_DIR$/Classes/Views/SDEventInspectorView.js" />
         <option value="$PROJECT_DIR$/Classes/Tools/helpers.js" />
         <option value="$PROJECT_DIR$/Classes/Tools/eppz!kit.js" />
         <option value="$PROJECT_DIR$/Classes/Tools/Class.js" />
+        <option value="$PROJECT_DIR$/UI/scss/index.scss" />
+        <option value="$PROJECT_DIR$/Classes/Views/SDTouches.js" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -187,6 +187,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="FullScreen" value="false" />
   </component>
   <component name="PublishConfig" serverName="localhost (MAMP)" serverId="670205ea-3f32-4664-973c-94ec724fb0a1">
     <servers>
@@ -228,7 +229,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24970622" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24970622" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
@@ -325,13 +326,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/UI/scss/index.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="21" selection-start="64" selection-end="64" vertical-scroll-proportion="0.04411765">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Classes/Views/SDView.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="21" selection-start="64" selection-end="64" vertical-scroll-proportion="0.04411765">
@@ -342,13 +336,6 @@
     <entry file="file://$PROJECT_DIR$/Classes/Views/SDEventInspectorView.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="21" selection-start="64" selection-end="64" vertical-scroll-proportion="0.04411765">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Classes/Views/SDTouches.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="21" selection-start="64" selection-end="64" vertical-scroll-proportion="0.014705882">
           <folding />
         </state>
       </provider>
@@ -376,7 +363,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="39" selection-start="1024" selection-end="1024" vertical-scroll-proportion="0.49058473">
+        <state line="32" column="28" selection-start="1004" selection-end="1004" vertical-scroll-proportion="0.47571853">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Classes/Views/SDTouches.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="7" selection-start="1543" selection-end="1543" vertical-scroll-proportion="0.44117647">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UI/scss/index.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="40" selection-start="1238" selection-end="1238" vertical-scroll-proportion="0.1764706">
           <folding />
         </state>
       </provider>

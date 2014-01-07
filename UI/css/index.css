@@ -71,9 +71,10 @@ body {
   background-color: lightgray;
   position: relative;
   font-family: 'Roboto', sans-serif;
+  -webkit-user-select: none;
 }
 
-/* line 29, ../scss/index.scss */
+/* line 31, ../scss/index.scss */
 #scene {
   width: 320px;
   height: 320px;
@@ -86,7 +87,7 @@ body {
   border: 1px solid black;
 }
 
-/* line 41, ../scss/index.scss */
+/* line 43, ../scss/index.scss */
 #view {
   width: 64px;
   height: 64px;
