@@ -9,7 +9,7 @@
  *
  */
 
-var SDTouches = Class.extend
+var EPPZBodyController = Class.extend
 ({
     /**
      * @param inspectableEventTypes Event types to be inspected.
@@ -35,7 +35,10 @@ var SDTouches = Class.extend
         build: function()
         {
             // Inspector.
-            var inspector = new SDEventInspectorView();
+            var inspector = new EPPZEventInspectorView();
+
+            // Segmented control.
+            var segmentedControl = new EPPZSegmentedControl(this.inspectableEventTypes);
 
             // Append.
             this.body.appendChild(inspector.div);

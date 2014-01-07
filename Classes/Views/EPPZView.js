@@ -9,10 +9,10 @@
  *
  */
 
-var SDView = Class.extend
+var EPPZView = Class.extend
 ({
     /**
-     * @param model The underlying model.
+     * @param id The controlled <div>'s id.
      */
     construct: function(id)
     {
@@ -23,6 +23,7 @@ var SDView = Class.extend
         this.div = null;
 
         this.build();
+        this.update();
     },
 
     /**
@@ -59,5 +60,10 @@ var SDView = Class.extend
         touchedUp: function()
         {
         },
+
+    batman: function()
+    {
+        log('Batman');
+    }
 
 });

@@ -16,9 +16,10 @@
         <script src="Classes/Tools/eppz!kit.js"></script>
 
         <!-- Common -->
-        <script src="Classes/Views/SDTouches.js"></script>
-        <script src="Classes/Views/SDView.js"></script>
-        <script src="Classes/Views/SDEventInspectorView.js"></script>
+        <script src="Classes/Views/EPPZBodyController.js"></script>
+        <script src="Classes/Views/EPPZView.js"></script>
+        <script src="Classes/Views/SegmentedControl/EPPZSegmentedControl.js"></script>
+        <script src="Classes/Views/EPPZEventInspectorView.js"></script>
 
         <!-- Controller -->
         <script type="text/javascript">
@@ -27,7 +28,7 @@
             document.body.preventScroll();
 
             // Manager.
-            var touches = new SDTouches(
+            var touches = new EPPZBodyController(
                     [
                         // Inspectable event types.
 
@@ -49,7 +50,7 @@
 
             // Views.
             var scene = document.getElementById('scene');
-            var view = new SDView('view');
+            var view = new EPPZView('view');
             scene.appendChild(view.div);
 
         </script>

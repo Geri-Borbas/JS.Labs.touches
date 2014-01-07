@@ -30,8 +30,8 @@
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  *
  */
-/* line 13, ../scss/SDEventInspectorView.scss */
-.SDEventInspectorView {
+/* line 13, /Users/itunes/MAMP/labs!/labs!touches/UI/scss/EPPZEventInspectorView.scss */
+.EPPZEventInspectorView {
   width: 319px;
   margin-top: 10px;
   margin-left: 10px;
@@ -39,18 +39,18 @@
   top: 0;
   left: 0;
 }
-/* line 27, ../scss/SDEventInspectorView.scss */
-.SDEventInspectorView ul, .SDEventInspectorView li {
+/* line 27, /Users/itunes/MAMP/labs!/labs!touches/UI/scss/EPPZEventInspectorView.scss */
+.EPPZEventInspectorView ul, .EPPZEventInspectorView li {
   margin: 0;
   padding: 0;
 }
-/* line 33, ../scss/SDEventInspectorView.scss */
-.SDEventInspectorView li {
+/* line 33, /Users/itunes/MAMP/labs!/labs!touches/UI/scss/EPPZEventInspectorView.scss */
+.EPPZEventInspectorView li {
   margin-bottom: 1px;
   list-style-type: none;
 }
-/* line 39, ../scss/SDEventInspectorView.scss */
-.SDEventInspectorView label {
+/* line 39, /Users/itunes/MAMP/labs!/labs!touches/UI/scss/EPPZEventInspectorView.scss */
+.EPPZEventInspectorView label {
   padding: 3px;
   font-size: 10px;
   background-color: darkgray;
@@ -59,8 +59,8 @@
   -moz-border-radius: 3px;
   border-radius: 3px;
 }
-/* line 51, ../scss/SDEventInspectorView.scss */
-.SDEventInspectorView span {
+/* line 51, /Users/itunes/MAMP/labs!/labs!touches/UI/scss/EPPZEventInspectorView.scss */
+.EPPZEventInspectorView span {
   padding: 3px;
   font-size: 12px;
   font-family: 'Inconsolata', sans-serif;

@@ -9,10 +9,9 @@
  *
  */
 
-var SDEventInspectorView = SDView.extend
+var EPPZEventInspectorView = EPPZView.extend
 ({
     /**
-     * @param model The underlying model.
      */
     construct: function()
     {
@@ -55,6 +54,7 @@ var SDEventInspectorView = SDView.extend
         this.propertyLabels = [];
 
         this.build();
+        this.update();
     },
 
     /**
@@ -101,7 +101,7 @@ var SDEventInspectorView = SDView.extend
 
             // Create.
             var div = document.createElement('div');
-                div.className = 'SDEventInspectorView';
+                div.className = 'EPPZEventInspectorView';
 
                 // Property labels.
                 var propertyLabels = [];
@@ -142,7 +142,11 @@ var SDEventInspectorView = SDView.extend
 
         update: function()
         {
+            $super.batman();
+
             var event = this.event;
+            if (event == null) return;
+
             this.eachPropertyLabel(function(eachPropertyLabel)
             {
                 var eachValue = event[eachPropertyLabel.propertyName];
@@ -159,5 +163,11 @@ var SDEventInspectorView = SDView.extend
                 eachPropertyLabel.innerText = eachValue;
             });
         },
+
+        batman: function()
+        {
+            this.$.batman();
+            log('Superman');
+        }
 
 });

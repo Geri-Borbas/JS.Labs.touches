@@ -13,26 +13,52 @@ function Class()
 {}
 
 Class.prototype.construct=function(){};
-Class.extend = function(e)
+Class.extend = function(implementation)
 {
-    var t = function()
+    var instance = function()
     {
-        if(arguments[0]!==Class)
+        if(arguments[0] !== Class)
         {
-            this.construct.apply(this,arguments)
+            this.construct.apply(this, arguments);
         }
     };
 
-    var n=new this(Class);
-    var r=this.prototype;
-    for(var i in e)
-    {
-        var s=e[i];
-        if(s instanceof Function)s.$=r;
-        n[i]=s
-    }
-    t.prototype=n;
-    t.extend=this.extend;
+    // Create a shiny instace of the class.
+    var prototypeInstance = new this(Class);
+    var superClass = this.prototype;
 
-    return t;
+    /**
+     * Instance methods.
+     */
+
+        // Equip prototype with all the goodies declared in class implementation.
+
+            for(var eachPropertyName in implementation)
+            {
+                var eachProperty = implementation[eachPropertyName];
+
+                if (eachProperty instanceof Function)
+                { eachProperty.$ = superClass; }
+
+                prototypeInstance[eachPropertyName] = eachProperty;
+            }
+
+        // Common goodies for every object.
+
+            prototypeInstance.alert = function()
+            {
+                alert('Wow.');
+            }
+
+    /**
+     * Class methods.
+     */
+
+        // Prototype for this class.
+        instance.prototype = prototypeInstance;
+
+        // Inheritance.
+        instance.extend = this.extend;
+
+    return instance;
 }
