@@ -1,0 +1,96 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,700);
+@import url(http://fonts.googleapis.com/css?family=Inconsolata:400,700);
+/**
+ *
+ * Created by Borbás Geri on 1/5/14
+ * Copyright (c) 2014 eppz! development, LLC.
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+ * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+ *
+ */
+/**
+ *
+ * Created by Borbás Geri on 1/5/14
+ * Copyright (c) 2014 eppz! development, LLC.
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+ * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+ *
+ */
+/**
+ *
+ * Created by Borbás Geri on 1/5/14
+ * Copyright (c) 2014 eppz! development, LLC.
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+ * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+ *
+ */
+/* line 13, ../scss/SDEventInspectorView.scss */
+.SDEventInspectorView {
+  width: 319px;
+  margin-top: 10px;
+  margin-left: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* line 27, ../scss/SDEventInspectorView.scss */
+.SDEventInspectorView ul, .SDEventInspectorView li {
+  margin: 0;
+  padding: 0;
+}
+/* line 33, ../scss/SDEventInspectorView.scss */
+.SDEventInspectorView li {
+  margin-bottom: 1px;
+  list-style-type: none;
+}
+/* line 39, ../scss/SDEventInspectorView.scss */
+.SDEventInspectorView label {
+  padding: 3px;
+  font-size: 10px;
+  background-color: darkgray;
+  color: lightgray;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+/* line 51, ../scss/SDEventInspectorView.scss */
+.SDEventInspectorView span {
+  padding: 3px;
+  font-size: 12px;
+  font-family: 'Inconsolata', sans-serif;
+}
+
+/* line 21, ../scss/index.scss */
+body {
+  background-color: lightgray;
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* line 29, ../scss/index.scss */
+#scene {
+  width: 320px;
+  height: 320px;
+  margin-top: -160px;
+  margin-left: -160px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: darkgray;
+  border: 1px solid black;
+}
+
+/* line 41, ../scss/index.scss */
+#view {
+  width: 64px;
+  height: 64px;
+  margin: 64px;
+  background-color: lightgray;
+  border: 1px solid black;
+}

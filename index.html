@@ -1,0 +1,42 @@
+<html>
+
+    <head>
+        <!-- Prevent iOS zoom -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <link rel="stylesheet" type="text/css" href="UI/css/index.css">
+    </head>
+
+    <body>
+
+        <div id="scene"></div>
+
+        <!-- Boilerplate -->
+        <script src="Classes/Tools/Class.js"></script>
+        <script src="Classes/Tools/Helpers.js"></script>
+        <script src="Classes/Tools/eppz!kit.js"></script>
+
+        <!-- Common -->
+        <script src="Classes/Views/SDTouches.js"></script>
+        <script src="Classes/Views/SDView.js"></script>
+        <script src="Classes/Views/SDEventInspectorView.js"></script>
+
+        <!-- Controller -->
+        <script type="text/javascript">
+
+            // Prevent iOS scroll.
+            document.body.preventScroll();
+
+            // Manager.
+            var touches = new SDTouches();
+
+            // Views.
+            var scene = document.getElementById('scene');
+            var view = new SDView('view');
+            scene.appendChild(view.div);
+
+
+        </script>
+
+    </body>
+
+</html>
