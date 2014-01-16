@@ -1,59 +1,24 @@
 <html>
 
     <head>
+
+        <!-- Libraries -->
+        <script src="_libraries/eppz!js.min.js"></script>
+        <script src="_libraries/handlebars-v1.3.0.js"></script>
+
         <!-- Prevent iOS zoom -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
         <link rel="stylesheet" type="text/css" href="UI/css/index.css">
+
     </head>
 
     <body>
 
+        <!-- Scene -->
         <div id="scene"></div>
 
-        <!-- Boilerplate -->
-        <script src="Classes/Tools/Class.js"></script>
-        <script src="Classes/Tools/Helpers.js"></script>
-        <script src="Classes/Tools/eppz!kit.js"></script>
-
-        <!-- Common -->
-        <script src="Classes/Views/EPPZBodyController.js"></script>
-        <script src="Classes/Views/EPPZView.js"></script>
-        <script src="Classes/Views/SegmentedControl/EPPZSegmentedControl.js"></script>
-        <script src="Classes/Views/EPPZEventInspectorView.js"></script>
-
         <!-- Controller -->
-        <script type="text/javascript">
-
-            // Prevent iOS scroll.
-            document.body.preventScroll();
-
-            // Manager.
-            var touches = new EPPZBodyController(
-                    [
-                        // Inspectable event types.
-
-                        'mouseover',
-                        'mouseout',
-
-                        'onclick',
-                        'mousedown',
-                        // 'mousemoved',
-                        'mouseup',
-
-                        'touchstart',
-                        // 'touchmove',
-                        'touchend',
-
-                        'touchcancel',
-                        'touchleave',
-                    ]);
-
-            // Views.
-            var scene = document.getElementById('scene');
-            var view = new EPPZView('view');
-            scene.appendChild(view.div);
-
-        </script>
+        <script src="_build/Classes/index.js"></script>
 
     </body>
 

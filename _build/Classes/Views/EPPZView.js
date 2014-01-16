@@ -9,56 +9,64 @@
  *
  */
 
-function Class()
-{}
 
-Class.prototype.construct=function(){};
-Class.extend = function(implementation)
-{
-    var instance = function()
+var EPPZView = Class.extend
+({
+    // Model.
+    id: '',
+
+    // Outlets.
+    div: null,
+
+    /**
+     * @param id The controlled <div>'s id.
+     */
+    construct: function(id)
     {
-        if(arguments[0] !== Class)
+        // Will be moved to eppz!js later on.
+        synthesizeEnumeratorsForObject(this);
+
+        // Model.
+        this.id = id;
+
+        this.build();
+        this.update();
+    },
+
+    /**
+     * UI
+     */
+
+        build: function()
         {
-            this.construct.apply(this, arguments);
-        }
-    };
+            // Create.
+            var div = Element.elementOfType('div');
+                div.id = this.id;
 
-    // Create a shiny instace of the class.
-    var prototypeInstance = new this(Class);
-    var superClass = this.prototype;
+            // Set.
+            this.div = div;
+            this.div.view = this;
+        },
 
-    /**
-     * Instance methods.
-     */
-
-        // Equip prototype with all the goodies declared in class implementation.
-
-            for(var eachPropertyName in implementation)
-            {
-                var eachProperty = implementation[eachPropertyName];
-
-                if (eachProperty instanceof Function)
-                { eachProperty.$ = superClass; }
-
-                prototypeInstance[eachPropertyName] = eachProperty;
-            }
-
-        // Common goodies for every object.
-
-            prototypeInstance.alert = function()
-            {
-                alert('Wow.');
-            }
+        update: function()
+        {
+        },
 
     /**
-     * Class methods.
+     * Interactions
      */
 
-        // Prototype for this class.
-        instance.prototype = prototypeInstance;
+        touchedDown: function()
+        {
+        },
 
-        // Inheritance.
-        instance.extend = this.extend;
+        touchMoved: function()
+        {
+        },
 
-    return instance;
-}
+        touchedUp: function()
+        {
+        },
+
+});
+

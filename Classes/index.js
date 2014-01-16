@@ -1,7 +1,7 @@
 /**
  *
- * Created by Borbás Geri on 1/5/14
- * Copyright (c) 2014 eppz! development, LLC.
+ * Created by Borbás Geri on 1/15/14
+ * Copyright (c) 2013 eppz! development, LLC.
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
  * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
@@ -10,63 +10,35 @@
  */
 
 
-var EPPZView = Class.extend
-({
-    // Model.
-    id: '',
+include('Accessors.js');
+include('Views/EPPZBodyController.js');
 
-    // Outlets.
-    div: null,
 
-    /**
-     * @param id The controlled <div>'s id.
-     */
-    construct: function(id)
-    {
-        // Will be moved to eppz!js later on.
-        synthesizeEnumeratorsForObject(this);
+// Prevent iOS scroll.
+document.body.preventScroll();
 
-        // Model.
-        this.id = id;
+// Manager.
+var touches = new EPPZBodyController(
+    [
+        // Inspectable event types.
 
-        this.build();
-        this.update();
-    },
+        'mouseover',
+        'mouseout',
 
-    /**
-     * UI
-     */
+        'onclick',
+        'mousedown',
+        // 'mousemoved',
+        'mouseup',
 
-        build: function()
-        {
-            // Create.
-            var div = Element.elementOfType('div');
-                div.id = this.id;
+        'touchstart',
+        // 'touchmove',
+        'touchend',
 
-            // Set.
-            this.div = div;
-            this.div.view = this;
-        },
+        'touchcancel',
+        'touchleave',
+    ]);
 
-        update: function()
-        {
-        },
-
-    /**
-     * Interactions
-     */
-
-        touchedDown: function()
-        {
-        },
-
-        touchMoved: function()
-        {
-        },
-
-        touchedUp: function()
-        {
-        },
-
-});
-
+// Views.
+var scene = document.getElementById('scene');
+var view = new EPPZView('view');
+scene.appendChild(view.div);

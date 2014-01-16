@@ -1,0 +1,5 @@
+# SASS cache
+.sass_cache
+
+# GruntJS plugins
+node_modules

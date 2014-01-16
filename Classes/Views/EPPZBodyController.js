@@ -9,6 +9,11 @@
  *
  */
 
+
+include('EPPZEventInspectorView.js');
+include('SegmentedControl/EPPZSegmentedControl.js');
+
+
 var EPPZBodyController = Class.extend
 ({
     /**
@@ -35,7 +40,7 @@ var EPPZBodyController = Class.extend
         build: function()
         {
             // Inspector.
-            var inspector = new EPPZEventInspectorView();
+            var inspector = new EPPZEventInspectorView('inspector');
 
             // Segmented control.
             var segmentedControl = new EPPZSegmentedControl(this.inspectableEventTypes);
@@ -107,3 +112,4 @@ var EPPZBodyController = Class.extend
         {
         },
 });
+
